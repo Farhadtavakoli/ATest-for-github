@@ -9,12 +9,12 @@ namespace ATest_for_github
         {
             string[] color= {"Red,Green, Yellow, Blue,Cyan"};
             Console.Write("Ange ditt namn: ");
-            string namn = Console.ReadLine();
+            string namn = Console.ReadLine().ToUpper();
             for(int i=0;i<namn.Length;i++)
             {
                 Console.ForegroundColor = ConsoleColor.Green;
                 Console.SetCursorPosition(10 - i, 10+i+i); // Printing backward
-                Console.Write(namn[i]+"*");
+                Console.Write(namn[namn.Length-1-i]);
             }
             Console.ReadKey();
         }
