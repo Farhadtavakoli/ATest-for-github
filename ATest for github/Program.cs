@@ -14,7 +14,7 @@ namespace ATest_for_github
             {
                 Console.ForegroundColor = ConsoleColor.Green;
                 Console.SetCursorPosition(10 - i, 10+i+i); // Printing backward
-                Console.Write(namn[i]);
+                Console.Write(namn[i]+"*");
             }
             Console.ReadKey();
         }
